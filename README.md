@@ -1,7 +1,8 @@
 # zipkin_php
 zipkin的php客户端，采用json传输，
-我试了github的zipkin_php_scribe(https://github.com/malakaw/zipkin_php_scribe)这个项目，不好用，传输的数据元素名跟zipkin需要的对应不起来，导致zipkin接收不到。
-所以自己写了套采用json数据格式传输的zipkin的php客户端。
+我试了github的zipkin_php_scribe(https://github.com/malakaw/zipkin_php_scribe)这个项目，不好用，传输的数据元素名跟zipkin需要的对应不起来，导致zipkin接收不到，
+其他几个github上的项目也都有这个问题,不知道是不是适用于旧版本的zipkin的，反正我的zipkin是接收不到这个项目传来的数据。
+所以自己写了套采用json数据格式传输的zipkin的php客户端,借用了zipkin_php_scribe项目中的一些代码。
 
 需要先安装kafka的php扩展，https://github.com/arnaud-lb/php-rdkafka
 
